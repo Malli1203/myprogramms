@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Develop</title>
+<style>
+*{
+ margin:0px;
+ padding:0px;
+}
+body {
+    margin: 0px; 
+	padding:0px; 
+}
+.menu ul {
+ 
+ list-style-type:none;
+  margin:0;
+  padding:0;
+ background-color:#555cdf; 
+}
+li  {
+ float:left;
+ }
+ li a {
+ display:block;
+ padding: 14px 16px;
+ color:#555;
+ text-align:center;
+ text-decoration:none;
+
+}
+li a.active{
+ background-color:#ff0000;
+}
+li a:hover:not(.active){
+  background-color:#00cd55;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+	img{
+	margin-left:35%;
+	border-radius:50%;
+	}
+	marquee{
+	 color:#ff0000;
+	 font-style: oblique;
+	 font-size:25px;
+	}
+	.header h1{
+	  width:auto;
+	  height:75px;
+	  background-color:#000;
+	  color:#ffffff;
+	  text-align:center;
+	  padding-top:10px
+	}
+	input[type=text],input[type=password]{
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	}
+	input[type=submit]{
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+	color:#ffffff;
+}
+div{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+	}
+form{
+display:block;
+text-align:center;
+background-color:#dd0055;
+}
+label{
+color:#ffffff;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Web Application developed by sharma</h1>
+</div>
+<div class="menu">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a><li>
+<li><a href="#">contact</a><li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="dropbtn">Dropdown</button>
+<div class="dropdown-content">
+<a href="#">Java</a>
+<a href="#">Dot Net</a>
+<a href="#">Javascript</a>
+<a href="#">Angularjs</a>
+<a href="#">Back-end</a>
+<a href="#">Front-end</a>
+</div>
+</div>
+<marquee onmouseover="stop()" onmouseleave="start()">ui developer</marquee>
+<br>
+<div>
+<img src="images/bird.jpg">
+</div>
+<form action="/action_page.php">
+<label for="email"><b>Email:</b></label><br/>
+<input type="text" name="email" placeholder="Enter User Email"><br/>
+<label for="pwd"><b>password:</b><br/></label>
+<input type="password" name="pwd" placeholder="Enter Valid Password"><br/><br/>
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
