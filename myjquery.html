@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+<title>Jquery Example</title>
+</head>
+<body>
+<script>
+window.onload = function()
+{
+	if(document.addEventListener){
+ document.getElementById('button5').addEventListener('click', clickHandler, false);
+	}
+	else{
+document.getElementById('button5').attachEvent('click', clickHandler);
+	}
+};
+function clickHandler()
+{
+	alert("who am i");
+}
+</script>
+<input type="button" id="button5" value="Click Me"/>
+</body>
+</html>
