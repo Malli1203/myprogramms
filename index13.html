@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navigation Bars</title>
+<style>
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  background-color:#ff55;
+  overflow:hidden;
+}
+
+li  {
+ float:left;
+ border-right:1px solid #bbb;
+ }
+li a {
+ display:block;
+ padding: 14px 16px;
+ color:#000;
+ text-align:center;
+ text-decoration:none;
+
+}
+li a:hover:not(.active){
+  background-color:#cbcb;
+}
+li a.active{
+ background:#dfdfdf;
+}
+
+
+</style>
+</head>
+<body>
+<h2>Horizontal Navigation Bar</h2>
+<ul>
+<li><a class="active" href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#product">Product</a></li>
+<li style="float:right"><a href="#contact">Contact</a></li>
+</ul>
+
+
+</body>
+
+</html>
