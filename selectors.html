@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+<head>
+<title>Jquery Selectors</title>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+
+$(document).ready(function(){
+  //document.getElemntById('button2').style.background-color = 'yellow';
+
+ //$("#button5").css('background-color','red');
+ 
+ alert($('#button5')[0]);
+ 
+ /*if($('#button5').length > 0)
+ {
+ 
+ alert('Elemnet found');
+ }
+ else {
+ alert('Element not foumd');
+ }*/
+});
+
+</script>
+</head>
+
+<body>
+
+<input id="button5" type="button" value="Click Me" />
+<input id="button5" type="button" value="Click Me" />
+
+</body>
+</html>
