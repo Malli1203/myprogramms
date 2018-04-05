@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>Angularjs services Example</title>
+<script src="js/angular.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<p>The Url Of this is page</p>
+<h2>{{myUrl }}</h2>
+<p>This example uses the built-in $location service to get the absolute url of the page.</p>
+</div>
+
+<script>
+/*
+var app = angular.module("myApp", []);
+app.controller('myCtrl', function($scope, $location){
+$scope.myUrl = $location.absUrl();
+
+});
+*/
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $location) {
+    $scope.myUrl = $location.absUrl();
+});
+</script>
+
+</body>
+</html>

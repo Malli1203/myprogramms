@@ -1,0 +1,27 @@
+<!DCOTYPE html>
+<html>
+<script src="js/angular.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<p>This header will change after two seconds:</p>
+<h1>{{myHeader}}</h2>
+</div>
+
+<p>The $timeout service runs a function after a specified number of milliseconds.</p>
+
+
+<script>
+
+let app = angular.module("myApp", []);
+
+ app.controller('myCtrl', function($scope, $timeout){
+ 
+ $scope.myHeader = "Hello dear";
+ $timeout(function(){
+ $scope.myHeader = "my Application heading";
+ }, 2000);
+ 
+ });
+</script>
+</body>
+</html>
