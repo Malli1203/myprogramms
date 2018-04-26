@@ -1,50 +1,56 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Form Example</title>
-<style>
-
-body {
-    margin:50px 0px; padding:0px;
-    text-align:center;
-    align:center;
-}
-label,input {
- display: block;
- width: 150px;
- float: left;
- margin-bottom: 10px;
-}
-
-label {
- text-align: right;
- width: 75px;
- padding-right: 20px;
-}
-
-br {
- clear: left;
-}
-
-
-
-    </style>
+<meta charset="utf-8">
+<title>Form</title>
+<link rel="stylesheet" href="css/bootstarp.css">
+<script src="js/query-3.2.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
 </head>
 
-
 <body>
-
- <form name="Form1"  action="mypage.asp" method="post">
-
- <label for="name">Name</label>
- <input id="name" name="name"><br>
-
- <label for="address">Address</label>
- <input id="address" name="address"><br>
-
- <label for="city">City</label>
- <input id="city" name="city"><br>
- <input type="submit" name="submit" id="submit" value="submit" class="button" />
-
-</form>
+<div class="container">
+<div class="form-group">
+<label for="user">username</label>
+<input type="text" name="user" id="user" class="form-control"><br/><br/>
+</div>
+<div class="form-group">
+<label for="pwd">password</label>
+<input type="password" name="pwd" class="form-control"><br/><br/>
+</div>
+<div class="form-group">
+<label for="address">Address</label>
+<textarea name="address" class="form-control">
+</textarea>
+</div>
+<div class="form-group">
+<label for="color">Select any color</label>
+<select name="color" class="form-control" multiple>
+<option value="">Select any color</option>
+<option value="red">Red</option>
+<option value="whiye">White</option>
+<option value="yellow">Yellow</option>
+<option value="blue">Blue</option>
+<option value="green">Green</option>
+</select>
+</div>
+<div class="form-group">
+<label for="vehicle" class="form-check-lable">
+<input type="checkbox" name="vehicle" class="form-check-input">option 1</label>
+</div>
+<div class="form-class">
+<label for="vehicle" class="form-check-lable">
+<input type="checkbox" name="vehicle" class="form-check-input">option 2</label>
+</div>
+<div class="form-check form-check-inline">
+<label for="vehicle" class="form-check-lable">
+<input type="radio" name="vehicle" class="form-check-input">option 1</label>
+</div>
+<div class="form-check form-check-inline">
+<label for="vehicle" class="form-check-lable">
+<input type="radio" name="vehicle" class="form-check-input">option 2</label>
+</div>
+</div>
 </body>
+</html>
