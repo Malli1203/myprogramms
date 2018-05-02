@@ -1,35 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<title>Navigation Bars</title>
-<style>
-ul {
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  
-}
-li a {
- display:block;
- background-color:#bbbbbb;
- width:80px;
-}
-
-</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Custom Checkbox Plugin Demos</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/demo.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<style>
+			.span {
+			   color: red;
+			}
+			.fa-blind{
+				background: black;
+				color: red
+			}
+			</style> 
 </head>
 <body>
-<h2>Navigation Bar</h2>
-<p><b>display block</b></p>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#product">Product</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
 
+		<div class="wrap">
+                <div class="s1">
+                    
+                </div>
+<div class="container main">
+        <div class="card bg-info">
+                <div class="card-body"><strong>UPLOAD PG</strong></div>
+            </div>
+    <hr>
+    <form id="myform" >
+    <div class="form-group ">
+    	<label for="user">PG Name:<span>*</span></label>
+        <input type="text" name="user" id="user" class="form-control" required placeholder="Ex:Sai PG Hostel">
+    </div>
+    <div class="form-group">
+        <lable for="gender">Gender:<span>*</span></lable>
+                <select class="form-control" name="gender" class="form-control">
+                        <option name="" value="">Select Gender</option>
+                        <option name="ml" value="male">Male</option>
+                        <option name="fm" value="female">Female</option>
+                        <option name="un" value="unisex">Unisex</option>
+                        </select>
+    </div>
+    <div class="form-group">
+        <label for="sr" >Single day Rent:<span>*</span></label>
+        <input type="text" name="fn" class="form-control" placeholder="Ex:200 Rs." required>
+    </div>
+    
+    <div class="form-group">
+        <label for="roomsharing">Room Sharing:<span>*</span></label>
+            <select name="roomsharing" name="roomsharing" class="form-control"  required>
+                    <option value="">select any roomsharing</option>
+                    <option value="3sharing">3sharing</option>
+                    <option value="2sharing">2sharing</option>
+                    <option value="1sharing">1sharing</option>
+            </select>
 
+    </div>
 
+    <div class="form-group" >
+            <label for="ln">Rent:<span>*</span></label>
+                <input type="text" class="form-control" name="ln" placeholder="Ex:6000 Rs." required>
+		</div>
+		
+    <div class="form-group" >
+        <label for="ln">Diposit:<span>*</span></label>
+            <input type="text" class="form-control" name="ln" placeholder="Ex:6000 Rs." required>
+    </div>
+    <div class="form-group">
+            <label for="city">City:<span>*</span></label>
+                <select name="city"  class="form-control"  required>
+                        <option value="">select any city</option>
+                        <option value="hyd">Hyderabad</option>
+                        <option value="bang">Bangalore</option>
+                        <option value="more">more</option>
+                </select>
+    
+        </div>
+    <div class="form-group">
+        <label for="hn">Address</label>
+        <input type="text" name="hn" class="form-control" placeholder="Ex:H No.  and Street" >
+    </div>
+    <div class="form-group">
+        <label for="hn">Pincode</label>
+        <input type="text" name="hn" class="form-control" placeholder="Ex:518360">
+    </div>
+    <div class="form-group">
+        <label for="hn">Contact Number</label>
+        <input type="text" name="hn" class="form-control" placeholder="10 Digits Number" >
+    </div>
+    <div class="form-group">
+        <label for="img">Upload Photes</label>
+        <input type="file" name="img"class="form-control">
+    </div>
+
+</div>
+
+	<div class="container header">
+
+			<div class="wrapper">
+			<div class="card bg-info">
+					<div class="card-body">FOOD</div>
+				</div></div>
+				<div class="container section" id="example1">
+						<div class="row">
+						<div class="wrapper">
+							<div class="demo">
+								
+								
+
+					<div class="form-group" class="form-check">
+						
+						<label for="vehicle" class="form-check-label">
+								<input type="checkbox" name="vehicle" class="form-check-input">North Indian             <i class="fas fa-utensils"></i>
+							</label>
+						</div>
+						<div class="form-group" class="form-check">
+								<label for="vehicle" class="form-check-label">
+									<input type="checkbox" name="vehicle"  class="float-right" class="form-check-input">		South Indian          <i class="fas fa-utensils"></i>
+								</label>
+							</div>
+							<div class="form-group" class="form-check">
+									<label for="vehicle" class="form-check-label">
+										<input type="checkbox" name="vehicle" class="form-check-input">Only Veg             <i class="fas fa-utensils"></i>
+									</label>
+								</div>
+								
+						</div>
+						
+					</div>
+				</div>
+			
+				</div>
+
+		<div class="wrapper">
+			<hr>
+				<div class="card bg-info">
+						<div class="card-body">Amenities</div>
+					</div>
+		</div>
+	</div>	
+
+	<div class="container section" id="example1">
+		<div class="row">
+		<div class="wrapper">
+			<div class="demo">
+				
+                 <form>
+					<label><input type='checkbox' name='c1' checked="checked" tabindex='1'> 	WiFi<span class="float-right"><i class="fas fa-wifi"></i> </span></label><hr>
+					<label><input type='checkbox' name='c1' tabindex='2'> 	TV  <span class="float-right"> <i class="fas fa-laptop"></i>  </span></label><hr>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Internet  <span class="float-right"> <i class="fas fa-signal"></i>  </span></label><hr>
+					<label><input type='checkbox' name='c1' tabindex='4'> 	CCTV <span class="float-right"> <i class="fas fa-video"></i>    </span></label><hr>
+					<label><input type='checkbox' name='c1' tabindex='2'>	MediKit <span class="float-right"> <i class="fas fa-medkit"></i>    </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Fire Extinguisher<span class="float-right"> <i class="fas fa-fire-extinguisher"></i> </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'>	Fridge  <span class="float-right"> <i class="far fa-square"></i>  </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Bed<span class="float-right"> <i class="fas fa-bed"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'>	Laundry <span class="float-right"> <i class="fas fa-archive"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Microwave<span class="float-right"> <i class="far fa-square"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Minaral Water<span class="float-right"> <i class="fas fa-tint"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	House Keeping<span class="float-right"> <i class="fas fa-"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'>  	Kitchen<span class="float-right"> <i class="fas fa-utensils"></i>  </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	24 Hrs Hot Water<span class="float-right"> <i class="fas fa-shower"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Air Conditioner<span class="float-right"> <i class="fas fa-square"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Two Wheeler Parking<span class="float-right"> <i class="fas fa-motorcycle"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Four Wheeler Parking<span class="float-right"> <i class="fas fa-car"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'> 	Elevator<span class="float-right"> <i class="fas fa-square"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'>	Gym <span class="float-right"> <i class="fas fa-gym"></i>   </span></label>
+					<label><input type='checkbox' name='c1' tabindex='3'>	Security <span class="float-right"> <i class="fas fa-eye"></i>   </span></label>
+					
+				  
+				
+                
+			</div> 
+		</div> 
+	</div>
+		<div class="btn1">
+                <span> <input type="submit" class="btn btn-info"></span>
+			</div>
+		
+        </form> 
+          <hr>
+	
+	</div> <!-- #example1 -->
+	<footer class="container">
+        <p>&copy;2015 <a href="#" target="_blank" rel="nofollow">gopg.com</a> |
+             <a href="#" target="_blank" rel="nofollow">guru</a></p>
+	</footer>
+
+	<script type="text/javascript" src="source/jquery.checkbox.js"></script>
+	<script type="text/javascript">
+		(function($){
+
+			$("#example1 label").checkbox({
+				checked: "assets/cb1-1.png",
+				check: "assets/cb1-0.png"
+			});
+        
+			$("#example4 .decider input").checkbox({
+				checked: "assets/cb3-1.png",
+				check: "assets/cb3-0.png",
+				onChange: function(i) {
+
+					example4.each(function(index){ 
+						var data = $(this)[0].cCheckbox;
+						if (i.is(":checked")) {
+							data.activeIt();
+						}
+						else {
+							data.disableIt();
+						}
+					});
+
+				}
+			});
+		})(jQuery);
+	</script>
+<script>
+// just for the demos, avoids form submit
+jQuery.validator.setDefaults({
+  debug: true,
+  success: "valid"
+});
+$( "#myform" ).validate({
+  rules: {
+	agree: {
+	  required: true
+	}
+  }
+});
+</script>
 </body>
-
 </html>

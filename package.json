@@ -1,0 +1,25 @@
+{
+  "name": "custom-checkbox",
+  "version": "1.0.1",
+  "description": "use jpg or png as checkbox or radio button",
+  "main": "source/jquery.checkbox.js",
+  "scripts": {
+    "test": "$(\"input[type='checkbox']\").checkbox({ checked: \"path/to/jpg\", check: \"path/to/jpg\" });"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/putrasurya/custom-checkbox.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "custom checkbox",
+    "checkbox",
+    "radio"
+  ],
+  "author": "putrasurya",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/putrasurya/custom-checkbox/issues"
+  },
+  "homepage": "http://plugins.putrasurya.com/custom-checkbox"
+}

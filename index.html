@@ -1,84 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Easy form validation with HTML5</title>
-
-	<link rel="stylesheet" type="text/css" href="styles.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Custom Checkbox Plugin Demos</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/demo.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
 
 </head>
-
 <body>
-
-	<nav>
-		<a class="active" href="index.html">Basics</a>•
-		<a href="limits.html">Limits</a>•
-		<a href="styling.html">Styling</a>•
-		<a href="tooltips.html">Tooltips</a>•
-		<a href="patterns.html">Patterns</a>
-	</nav>
-
-	<form action="">
-
-		<div class="form-title-row">
-			<h1>Basics</h1>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/angular-tree-dropdown-directive/">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+	<div class="container header">
+		<div class="wrapper">
+			<h1>jQuery Custom Checkbox Plugin Demos</h1>
+		
 		</div>
+	</div>	
 
-		<div class="form-row">
-			<label>
-				<span>Name</span>
-				<input type="text" name="name" required>
-			</label>
+	<div class="container section" id="example1">
+		<div class="wrapper">
+			<div class="demo">
+				<form>
+					<label><input type='checkbox' name='c1' checked="checked" tabindex='1'> <span>Choose 1</span></label>
+					<label><input type='checkbox' name='c1' tabindex='2'> <span>Choose 2</span></label>
+					<label><input type='checkbox' name='c1' tabindex='3' disabled> <span>Choose 3</span></label>
+					<label><input type='checkbox' name='c1' tabindex='4'> <span>Choose 4</span></label>
+				</form>
+			</div> 
+			
+		</div> 
+	</div> <!-- #example1 -->
+
+	<div class="container section" id="example2">
+		<div class="wrapper">
+			<div class="demo">
+				<form action='' method='post'>
+					<label><input type='radio' name='r1' tabindex='5'> <span>Radio 1</span></label>
+					<label><input type='radio' name='r1' tabindex='6' checked="checked"> <span>Radio 2</span></label>
+					<label><input type='radio' name='r1' tabindex='7'> <span>Radio 3</span></label>
+					<label><input type='radio' name='r1' tabindex='8' disabled> <span>Radio 4</span></label>
+				</form>
+			</div> 
+			 
 		</div>
+	</div> <!-- #example2 -->
 
-		<div class="form-row">
-			<label>
-				<span>Email</span>
-				<input type="email" name="email" required>
-			</label>
+	<div class="container section" id="example3">
+		<div class="wrapper">
+			<div class="demo">
+				<p>&nbsp;</p>
+				<form action='' method='post'>
+					<center><label><input type='checkbox' name='c1' tabindex='9' checked="checked"></label></center>
+					<p id="status">Off</p>
+				</form>
+				<p>&nbsp;</p>
+			</div> 
+			 
 		</div>
+	</div> <!-- #example3 -->
 
-		<div class="form-row">
-			<label><span>Gender</span></label>
-			<div class="form-radio-buttons">
-
-				<div>
-					<label>
-						<input type="radio" name="gender" required>
-						<span>Male</span>
-					</label>
-				</div>
-
-				<div>
-					<label>
-						<input type="radio" name="gender">
-						<span>Female</span>
-					</label>
-				</div>
-
-			</div>
+	<div class="container section" id="example4">
+		<div class="wrapper">
+			<div class="demo">
+				<p>&nbsp;</p>
+				<form action='' method='post'>
+					<label class="decider"><span>Enable Life Options:</span> <input type='checkbox' tabindex='10' name='c1'></label>
+					<br>
+					<label class="group"><input type="radio" name="r1" value="0" tabindex='11' disabled> <span>Ghost Mode</span></label>
+					<label class="group"><input type="radio" name="r1" value="1" tabindex='12' disabled> <span>Human Mode</span></label>
+				</form>
+				<p>&nbsp;</p>
+			</div> 
+			 
 		</div>
+	</div> <!-- #example3 -->
 
-		<div class="form-row">
-			<label>
-				<span>I Agree To The Terms &amp; Conditions</span>
-				<input type="checkbox" name="terms" required>
-			</label>
-		</div>
+	<footer class="container">
+		<p>&copy;2015 <a href="http://putrasurya.com" target="_blank" rel="nofollow">putrasurya.com</a> | <a href="https://github.com/putrasurya/custom-checkbox" target="_blank" rel="nofollow">Github</a></p>
+	</footer>
 
-		<div class="form-row">
-			<button type="submit">Submit Form</button>
-		</div>
+	<script type="text/javascript" src="source/jquery.checkbox.js"></script>
+	<script type="text/javascript">
+		(function($){
 
-		<p class="explanation">This example demonstrates the simplest kind of form validation. Try it by attempting to submit an empty form.</p>
+			$("#example1 label").checkbox({
+				checked: "assets/cb1-1.png",
+				check: "assets/cb1-0.png"
+			});
 
-	</form>
+			
+			$("#example2 label").checkbox({
+				checked: "assets/cb2-1.png",
+				check: "assets/cb2-0.png"
+			});
 
+
+			$("#example3 input").checkbox({
+				checked: "assets/cb3-1.png",
+				check: "assets/cb3-0.png",
+				onChange: function(i) {
+					if (i.is(":checked")) {
+						$("#status").html("On")
+					}
+					else {
+						$("#status").html("Off");
+					} 
+				},
+				onLoad: function(i) {
+					if (i.is(":checked")) {
+						$("#status").html("On")
+					}
+					else {
+						$("#status").html("Off");
+					}	
+				}
+			});
+
+
+			var example4 = $("#example4 .group").checkbox({
+				checked: "assets/cb2-1.png",
+				check: "assets/cb2-0.png"
+			});
+
+			$("#example4 .decider input").checkbox({
+				checked: "assets/cb3-1.png",
+				check: "assets/cb3-0.png",
+				onChange: function(i) {
+
+					example4.each(function(index){ 
+						var data = $(this)[0].cCheckbox;
+						if (i.is(":checked")) {
+							data.activeIt();
+						}
+						else {
+							data.disableIt();
+						}
+					});
+
+				}
+			});
+		})(jQuery);
+	</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
-
 </html>
